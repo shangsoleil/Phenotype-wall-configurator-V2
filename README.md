@@ -1,5 +1,4 @@
 # Phenotype-wall-configurator-V2
-PT3000 wall compatibility configurator
 <img width="568" height="210" alt="image" src="https://github.com/user-attachments/assets/ebcc6d9d-340a-488b-815b-8f9f3400aece" />
 
 ## 功能描述
