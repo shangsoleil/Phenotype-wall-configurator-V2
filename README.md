@@ -1,17 +1,17 @@
-# Phenotype-wall-configurator-V2
+# Phenotype-wall-configurator-Reforged
 <img width="568" height="210" alt="image" src="https://github.com/user-attachments/assets/ebcc6d9d-340a-488b-815b-8f9f3400aece" />
 # 更新日志
 
-本文件记录 PhenoTyper Wall Configurator 的重要用户可见变更。
+本文件记录 PhenoTyper Wall Configurator-Reforged的重要用户可见变更。
 
 ## [V1.0版]
-# PhenoTyper Wall Configurator — V1.0 功能说明
+# PhenoTyper Wall Configurator-Reforged — V1.0 功能说明
 
 版本日期：2026-07-19
 
 ## 1. 产品概述
 
-PhenoTyper Wall Configurator V1.0 是一个面向 Noldus PhenoTyper PT3000 小鼠笼体的墙板配置工具。它用于辅助销售、技术人员和客户选择四面墙板、检查相邻墙板冲突，并通过 2D 与 3D 视图直观展示最终组合。
+PhenoTyper Wall Configurator-Reforged V1.0 是一个面向 Noldus PhenoTyper PT3000 小鼠笼体的墙板配置工具。它用于辅助销售、技术人员和客户选择四面墙板、检查相邻墙板冲突，并通过 2D 与 3D 视图直观展示最终组合。
 
 在线版本：https://phenotyper-wall-configurator-pt3000.shangsoleil.chatgpt.site/
 
