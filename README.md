@@ -1,5 +1,6 @@
 # Phenotype-wall-configurator-Reforged
 <img width="568" height="210" alt="image" src="https://github.com/user-attachments/assets/ebcc6d9d-340a-488b-815b-8f9f3400aece" />
+
 # 更新日志
 
 本文件记录 PhenoTyper Wall Configurator-Reforged的重要用户可见变更。
