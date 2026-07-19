@@ -4,8 +4,131 @@
 
 本文件记录 PhenoTyper Wall Configurator 的重要用户可见变更。
 
-## [Unreleased]
+## [V1.0版]
+# PhenoTyper Wall Configurator — V1.0 功能说明
 
+版本日期：2026-07-19
+
+## 1. 产品概述
+
+PhenoTyper Wall Configurator V1.0 是一个面向 Noldus PhenoTyper PT3000 小鼠笼体的墙板配置工具。它用于辅助销售、技术人员和客户选择四面墙板、检查相邻墙板冲突，并通过 2D 与 3D 视图直观展示最终组合。
+
+在线版本：https://phenotyper-wall-configurator-pt3000.shangsoleil.chatgpt.site/
+
+## 2. V1.0 适用范围
+
+- 仅支持 PT3000 小鼠笼体。
+- 提供 North、East、West、South 四个墙板位置。
+- 收录 11 种 PT3000 墙板。
+- 兼容性结果仅显示兼容或冲突，不包含未知状态。
+- 2D/3D 模型用于展示配置关系，不作为精确尺寸 CAD 图纸。
+
+## 3. 墙板位置与墙角编号
+
+| 位置 | 方向 | 页面名称 |
+| --- | --- | --- |
+| 0 | North | Top wall |
+| 1 | East | Right wall |
+| 2 | West | Left wall |
+| 3 | South | Bottom wall |
+
+系统检查以下四个墙角：
+
+| 墙角 | 对应位置 |
+| --- | --- |
+| North-west | 0–2 |
+| North-east | 0–1 |
+| South-west | 2–3 |
+| South-east | 1–3 |
+
+## 4. 主要功能
+
+### 4.1 四面墙板选择
+
+- 每个位置均提供独立的墙板下拉选择器。
+- 选择卡片显示墙板型号、名称和真实产品缩略图。
+- 修改任意墙板后，2D、3D、墙角状态和兼容性报告同步更新。
+- Reset 按钮可恢复默认组合及默认 3D 观察角度。
+
+### 4.2 兼容性检查
+
+以下墙板可以彼此相对安装，但不能互相相邻：
+
+- `PTC3-W002_V15`
+- `PTC3-W002_V17`
+- `PTC3-W012_V10 + W014_V10`（Cognition wall）
+- `PTC3-W003*`
+
+两个受限型号位于同一墙角时，该墙角显示 `❌ Conflict`；其他组合显示 `✅ Compatible`。
+
+### 4.3 兼容性报告
+
+报告区域提供：
+
+- 整体配置状态。
+- 四个墙角各自的兼容或冲突结果。
+- 每个墙角对应的墙板简码。
+- 当前 0–3 四个位置的已选墙板清单。
+
+### 4.4 2D 俯视图
+
+- 从笼体上方展示四面墙和主要配件。
+- 墙板选择变化时，二维配件同步变化。
+- Side wall 和 Bottom wall 的外接配件显示在墙体外侧。
+- 跑轮、Shelter 等内部模块显示在笼体内部。
+- Cognition wall 的三孔板固定在 1–3 东南夹角，给食器位于 Right wall 外侧。
+- Bottom wall 门轴靠近 Left wall 一侧，门扇向笼体外侧开启。
+
+### 4.5 3D 模型
+
+- 使用 CSS 三维几何体展示 PT3000 笼体和墙板配件，不使用产品图片贴图。
+- 根据四面墙板选择实时装配跑轮、门、饮水瓶、给食器、Shelter、Cognition wall 等配件。
+- 支持鼠标或触控拖动旋转。
+- 支持滚轮缩放。
+- 获得键盘焦点后，可使用方向键旋转、`+`/`-` 缩放、`0` 恢复默认视角。
+
+### 4.6 Package 展示
+
+- Package 1 显示 CognitionWall 产品及工作原理说明图。
+- Package 2 和 Package 3 在 V1.0 中保留入口，等待后续资料补充。
+
+## 5. 已收录墙板
+
+| 型号 | 功能名称 |
+| --- | --- |
+| `PTC3-RW01_V10` | Running wheel wall |
+| `PTC3-W000_V11` | Standard wall |
+| `PTC3-W001*` | W001 wall |
+| `PTC3-W002_V15` | Bottle / feeder wall |
+| `PTC3-W002_V17` | Bottle / feeder wall (V17) |
+| `PTC3-W003*` | W003 wall |
+| `PTC3-W005_V13` | Wall with any shelter |
+| `PTC3M-W005` | Shelter wall |
+| `PTC3-W012_V10 + W014_V10` | Cognition wall |
+| `PTC3-W022_V11` | Shelter opening wall |
+| `PTC3-W023_V10` | Door wall |
+
+## 6. 使用流程
+
+1. 在四个墙板选择器中选择所需型号。
+2. 查看四个墙角及整体兼容性状态。
+3. 在 2D 视图中确认配件的平面位置和安装方向。
+4. 在 3D 视图中旋转、缩放并检查整体组合。
+5. 如需重新开始，点击 Reset。
+
+## 7. 运行方式
+
+- 在线访问：打开上方在线版本链接。
+- 单文件使用：直接打开 `PhenoTyper-Wall-Configurator-Standalone.html`。
+- 项目构建与验证：运行 `npm test`。
+
+## 8. V1.0 限制
+
+- 不支持 PT4500 或其他笼体尺寸。
+- Package 2 和 Package 3 尚未提供内容。
+- 当前兼容规则仅覆盖已经确认的产品逻辑。
+- 正式安装和选型应以 Noldus 最新产品资料及技术确认结果为准。
+- 
 ## [2026-07-19]
 
 ### 新增
