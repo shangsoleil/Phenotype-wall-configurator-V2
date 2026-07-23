@@ -5,6 +5,38 @@
 
 本文件记录 PhenoTyper Wall Configurator-Reforged的重要用户可见变更。
 
+更新日期：2026-07-23  
+对比版本：2026-07-19 V1.0
+
+## 本次新增
+
+### 1. Banner 视觉改版
+
+- 使用符合新版 Noldus 官网风格的绿色动态渐变背景。
+- 优化标题尺寸和响应式布局，减少不同浏览器中标题自动换行的问题。
+- 保持简洁的产品标题与 PT3000 副标题，不额外加入 Logo 图片。
+
+### 2. Package 2 展示
+
+- Package 2 标签现已可以点击。
+- 点击后显示 **PhenoTyper Avoidance Learning** 介绍图。
+- 当前标签会以绿色高亮，未选标签保持浅色状态。
+
+### 3. Package 3 展示
+
+- Package 3 标签现已可以点击。
+- 点击后显示 **PhenoTyper Circadian Activity Monitoring** 介绍图。
+- Package 1、Package 2 和 Package 3 现在可以在同一区域内切换展示。
+
+## 与 7 月 19 日版本的主要区别
+
+| 项目 | 2026-07-19 V1.0 | 2026-07-23 更新版 |
+| --- | --- | --- |
+| Banner | 静态深绿色背景 | Noldus 风格动态绿色渐变 |
+| 标题布局 | 部分浏览器可能自动换行 | 优化响应式尺寸，尽量保持单行 |
+| Package 1 | 可用 | 可用 |
+| Package 2 | 预留入口，无内容 | 可点击并显示 Avoidance Learning |
+| Package 3 | 预留入口，无内容 | 可点击并显示 Circadian Activity Monitoring |
 ## [V1.0版]
 # PhenoTyper Wall Configurator-Reforged — V1.0 功能说明
 
