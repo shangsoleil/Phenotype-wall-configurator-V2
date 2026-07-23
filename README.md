@@ -1,5 +1,5 @@
 # Phenotype-wall-configurator-Reforged
-<img width="568" height="210" alt="image" src="https://github.com/user-attachments/assets/ebcc6d9d-340a-488b-815b-8f9f3400aece" />
+<img width="1823" height="863" alt="已生成图像 1 (1)" src="https://github.com/user-attachments/assets/03e57796-a95c-42da-85a9-a02c4d047a15" />
 
 # 更新日志
 
